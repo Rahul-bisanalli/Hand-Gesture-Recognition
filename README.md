@@ -9,6 +9,7 @@ A high-performance, real-time hand gesture recognition system built using **Pyth
 - **Rule-Based Prediction**: Instantly recognizes Rock, Paper, Scissors, and Thumbs Up.
 - **Custom AI Training**: Collect your own data and train a Random Forest model for any gesture.
 - **Interactive Game**: Play Rock-Paper-Scissors against the computer with a countdown UI.
+- **Human-Computer Interaction (HCI)**: Control your PC's master volume using hand pinch gestures.
 
 ---
 
@@ -29,7 +30,7 @@ python -m venv venv
 .\venv\Scripts\activate
 
 # Install dependencies
-pip install opencv-python mediapipe numpy scikit-learn pandas joblib
+pip install opencv-python mediapipe numpy scikit-learn pandas joblib pycaw comtypes
 ```
 
 ---
@@ -49,6 +50,14 @@ Battle the AI in a real-time game!
 - Press **'q'** to quit.
 ```powershell
 python src/rps_game.py
+```
+
+### Step 3: Gesture Volume Control (HCI)
+Control your Windows system volume with your hand!
+- **Pinch fingers together**: Volume Down.
+- **Open fingers wide**: Volume Up.
+```powershell
+python src/gesture_volume_control.py
 ```
 
 ---
@@ -96,6 +105,7 @@ The system extracts **21 landmarks** (x, y coordinates). To make the AI robust, 
 - `src/train_ml_model.py`: Trains the Scikit-Learn model.
 - `src/ml_prediction.py`: Real-time inference logic.
 - `src/rps_game.py`: The interactive video game.
+- `src/gesture_volume_control.py`: System volume controller using pinch gestures.
 - `assets/`: UI images and diagrams.
 
 ---
