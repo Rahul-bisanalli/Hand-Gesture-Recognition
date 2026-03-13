@@ -1,7 +1,5 @@
 # 🖐️ Real-Time Hand Gesture Recognition System
 
-![Hand Tracking Preview](assets/landmarks.png)
-
 A high-performance, real-time hand gesture recognition system built using **Python**, **OpenCV**, and **MediaPipe**. This project allows you to recognize custom gestures using Machine Learning and includes a built-in Rock-Paper-Scissors game against an AI.
 
 ---
